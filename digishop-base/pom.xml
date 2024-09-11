@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.example.digishop</groupId>
+		<artifactId>digishop-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>digishop-base</artifactId>
+	<packaging>jar</packaging>
+	<name>digishop-base</name>
+	<dependencies>
+		<!-- Digishop Core -->
+		<dependency>
+			<groupId>com.example.digishop</groupId>
+			<artifactId>digishop-core</artifactId>
+		</dependency>
+		<!-- Digishop: 验证码组件 -->
+		<dependency>
+			<groupId>com.example.digishop</groupId>
+			<artifactId>digishop-captcha</artifactId>
+		</dependency>
+		<!-- Digishop: 消息通知组件 -->
+		<dependency>
+			<groupId>com.example.digishop</groupId>
+			<artifactId>digishop-notify</artifactId>
+		</dependency>
+		<!-- Digishop Log -->
+		<dependency>
+			<groupId>com.example.digishop</groupId>
+			<artifactId>digishop-log</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-net</groupId>
+			<artifactId>commons-net</artifactId>
+			<optional>true</optional>
+			<version>3.7</version>
+		</dependency>
+		<!-- Captcha -->
+		<dependency>
+			<groupId>com.github.penggle</groupId>
+			<artifactId>kaptcha</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.github.whvcse</groupId>
+			<artifactId>easy-captcha</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<!-- OS -->
+		<dependency>
+			<groupId>com.github.oshi</groupId>
+			<artifactId>oshi-core</artifactId>
+		</dependency>
+		<!-- Springboot Configuration -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<!-- Jsch -->
+		<dependency>
+			<groupId>com.jcraft</groupId>
+			<artifactId>jsch</artifactId>
+		</dependency>
+		<!-- WebSocket -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-websocket</artifactId>
+		</dependency>
+		<!-- MapStruct -->
+		<dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct-processor</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+</project>
